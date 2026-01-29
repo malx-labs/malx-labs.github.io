@@ -27,7 +27,7 @@
   <link rel="canonical" href="https://malx.io" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/styles.css?v=2" />
+  <link rel="stylesheet" href="assets/styles.css?v=3" />
 
    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
@@ -68,10 +68,14 @@
             <a href="#ecosystem" class="btn primary">Explore the Labs</a>
             <a href="#research" class="btn secondary">View the Research</a>
           </div>
-        </div>        
+        </div>
+        <div class="scroll-cue" onclick="document.getElementById('what').scrollIntoView({ behavior: 'smooth' })">
+          <span>Scroll to learn more</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+   
       </div>
     </section>
-
     <!-- WHAT IS MALX -->
     <section id="what" class="section">
       <h3>What is MalX?</h3>
@@ -231,5 +235,4 @@
   <!-- Optional JS -->
   <!-- <script src="script.js"></script> -->
 </body>
-
 </html>
