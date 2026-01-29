@@ -28,6 +28,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/lab.css" />
 
    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
@@ -154,6 +155,16 @@
       <p>
         Our work is grounded in real-world adversary behaviour — not simulations or abstractions.
       </p>
+      <div class="flow-teaser" onclick="document.getElementById('adversarial-flow').scrollIntoView({ behavior: 'smooth' })">
+        <div class="teaser-label">ARCHITECTURE</div>
+        <h3 class="teaser-title">Segmentation by Design</h3>
+        <p class="teaser-desc">
+          MalX operates within a fully isolated adversarial topology — engineered for containment, observation, and precision execution.
+        </p>
+        <p class="teaser-desc">This research is grounded in a fully segmented adversarial topology — engineered for containment, observation, and precision execution.</p>
+        <div class="teaser-link">Explore the architecture →</div>
+      </div>
+
     </section>
 
     <!-- ETHOS -->
@@ -220,6 +231,64 @@
         <a href="#research" class="btn secondary">Read the Archive</a>
       </div>
     </section>
+
+    <div class="section-divider">
+      <span>ARCHITECTURE DETAIL</span>
+    </div>
+
+    <section id="adversarial-flow" class="flow-arch">
+    <div class="page">
+    <h2>Adversarial Flow Architecture</h2>
+    <p class="flow-intro">
+      A segmented, observation-first topology for studying hostile systems in motion — without exposing the host.
+    </p>
+
+    <div class="flow-diagram">
+      <div class="flow-node host">
+        <h3>Host Machine</h3>
+        <p>192.168.1.0/24<br>Operator environment<br>No direct access</p>
+      </div>
+
+      <div class="flow-label no-access">NO DIRECT ACCESS</div>
+
+      <div class="flow-net">
+        <div class="flow-net-title">libvirt isolation-net<br>192.168.200.0/24</div>
+
+        <div class="flow-row">
+          <div class="flow-node infra">
+            <h3>Ubuntu Infra VM</h3>
+            <p>INetSim · Zeek · tcpdump<br>Simulation & observation</p>
+            <div class="os-meta">OS: Ubuntu 24.04</div>
+          </div>
+
+          <div class="flow-connector">
+            <span class="flow-line"></span>
+          </div>
+
+          <div class="flow-node windows">
+            <h3>Windows VM</h3>
+            <p>Controlled execution surface<br>Behavioral interaction</p>
+            <div class="os-meta">OS: Windows 11 Enterprise</div>
+          </div>
+
+          <div class="flow-connector">
+            <span class="flow-line"></span>
+          </div>
+
+          <div class="flow-node sandbox">
+            <h3>Ubuntu Sandbox VM</h3>
+            <p>Linux testing<br>Post-execution analysis</p>
+            <div class="os-meta">OS: Ubuntu 24.04</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
   </main>
 
   <footer class="site-footer">
