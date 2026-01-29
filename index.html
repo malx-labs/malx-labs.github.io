@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>MalX — Malware Research, Adversarial Security, Execution‑Flow Analysis</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MalX is a research-driven offensive security initiative focused on malware execution, evasion, adversary tradecraft, and real-world exploitation. Malicious by Design." />
+  <meta name="keywords" content="MalX, malware research, offensive security, adversarial security, malware analysis, execution flow, evasion techniques, red team tooling, malware sandbox, security research labs" />
+  <meta name="author" content="MalX Labs" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MalX — The Malware Experimentation Layer" />
+  <meta property="og:description" content="Offensive security research focused on malware execution, evasion, and adversary tradecraft." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://malx.io" />
+  <meta property="og:image" content="https://malx.io/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MalX — The Malware Experimentation Layer" />
+  <meta name="twitter:description" content="Research-driven offensive security focused on malware execution and adversarial behaviour." />
+  <meta name="twitter:image" content="https://malx.io/og-image.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://malx.io" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles.css" />
+
+   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">
+        <!--
+      <span class="logo-mark">X</span>
+      <span class="logo-text">MalX</span>
+    -->
+      <img src="assets/logo.png" width="150" />
+    </div>
+    <nav class="nav">
+      <a href="#what">What is MalX</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#research">Research</a>
+      <a href="#ethos">Ethos</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#involved">Get Involved</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>MalX</h1>
+        <h2>The Malware Experimentation Layer</h2>
+        <p class="tagline">Malicious by Design.</p>
+        <p class="hero-text">
+          A research-driven offensive-security initiative focused on malware execution, adversary tradecraft,
+          and the mechanics of real-world exploitation.
+        </p>
+        <div class="hero-actions">
+          <a href="#ecosystem" class="btn primary">Explore the Labs</a>
+          <a href="#research" class="btn secondary">View the Research</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="graph">
+          <div class="node node-entry"></div>
+          <div class="node node-stage"></div>
+          <div class="node node-payload"></div>
+          <div class="node node-evasion"></div>
+          <div class="edge edge-1"></div>
+          <div class="edge edge-2"></div>
+          <div class="edge edge-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS MALX -->
+    <section id="what" class="section">
+      <h3>What is MalX?</h3>
+      <p>
+        MalX is an independent research effort dedicated to understanding how malicious code behaves in real environments.
+        We study execution flow, evasion, staging, and adversarial automation — not as theory, but as hostile systems in motion.
+      </p>
+      <blockquote>
+        To understand an adversary, you must think like one — and build like one.
+      </blockquote>
+      <p>
+        MalX provides the structure, tooling, and research needed to explore modern offensive techniques with precision and clarity.
+      </p>
+    </section>
+
+    <!-- ECOSYSTEM -->
+    <section id="ecosystem" class="section section-grid">
+      <h3>The MalX Ecosystem</h3>
+      <p class="section-intro">
+        A modular architecture for adversarial experimentation.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h4>MalX Core</h4>
+          <p>
+            Foundational primitives for execution flow, staging, and runtime manipulation.
+            The backbone of the MalX ecosystem.
+          </p>
+        </article>
+        <article class="card">
+          <h4>MalX Sandbox</h4>
+          <p>
+            A controlled environment for malware execution and behavioural experimentation.
+            Built for operators, researchers, and adversarial engineers.
+          </p>
+        </article>
+        <article class="card">
+          <h4>MalX Forge</h4>
+          <p>
+            Tooling for crafting loaders, stagers, payloads, and execution chains.
+            Where offensive engineering happens.
+          </p>
+        </article>
+        <article class="card">
+          <h4>MalX Archive</h4>
+          <p>
+            Research, PoCs, experiments, and adversarial studies.
+            A living record of hostile execution.
+          </p>
+        </article>
+        <article class="card">
+          <h4>MalX Labs</h4>
+          <p>
+            The GitHub organization powering the ecosystem.
+            Open-source, research-first, precision-driven.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESEARCH FOCUS -->
+    <section id="research" class="section">
+      <h3>Research Focus</h3>
+      <p>
+        MalX explores the mechanics of malicious execution through:
+      </p>
+      <ul class="bullets">
+        <li>Payload execution and post-exploitation</li>
+        <li>Loader and stager design</li>
+        <li>Obfuscation and transformation pipelines</li>
+        <li>Evasion and runtime manipulation</li>
+        <li>Adversarial automation</li>
+        <li>Red-team tradecraft and operator workflows</li>
+        <li>Abuse of legitimate system components (LOLBins, LOLDrivers, etc.)</li>
+      </ul>
+      <p>
+        Our work is grounded in real-world adversary behaviour — not simulations or abstractions.
+      </p>
+    </section>
+
+    <!-- ETHOS -->
+    <section id="ethos" class="section section-grid">
+      <h3>Ethos</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Toolmaker mindset</h4>
+          <p>We build what we need, not what looks good in a slide deck.</p>
+        </article>
+        <article class="card">
+          <h4>Research over marketing</h4>
+          <p>No hype. No buzzwords. Just adversarial clarity.</p>
+        </article>
+        <article class="card">
+          <h4>Precision over noise</h4>
+          <p>Minimal, intentional, execution-focused.</p>
+        </article>
+        <article class="card">
+          <h4>Malicious by design</h4>
+          <p>Understanding malicious systems requires building them.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section">
+      <h3>Roadmap</h3>
+      <p>
+        The MalX ecosystem evolves continuously. Current areas of development include:
+      </p>
+      <ul class="bullets">
+        <li>Execution-flow primitives in MalX Core</li>
+        <li>Dynamic instrumentation in MalX Sandbox</li>
+        <li>Loader and stager pipelines in MalX Forge</li>
+        <li>Expanded adversarial research in MalX Archive</li>
+        <li>Documentation and architecture guides</li>
+      </ul>
+      <p>
+        MalX grows through experimentation — not deadlines.
+      </p>
+    </section>
+
+    <!-- RESPONSIBLE USE -->
+    <section class="section warning">
+      <h3>Responsible Use</h3>
+      <p>
+        MalX exists for research, education, and the advancement of offensive-security understanding.
+        All tools and experiments are intended for <strong>authorized environments only</strong>.
+      </p>
+      <p>
+        Misuse is not tolerated. Understanding adversaries does not require becoming one.
+      </p>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section id="involved" class="section">
+      <h3>Get Involved</h3>
+      <p>
+        MalX is open to researchers, operators, and toolmakers who share a commitment to adversarial clarity.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/malx-labs" class="btn primary" target="_blank" rel="noreferrer">Visit GitHub</a>
+        <a href="#research" class="btn secondary">Read the Archive</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="footer-brand">MalX Labs</span>
+      <span class="footer-tagline">Malicious by Design.</span>
+    </div>
+    <div class="footer-right">
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <!-- Optional JS -->
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
