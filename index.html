@@ -27,7 +27,7 @@
   <link rel="canonical" href="https://malx.io" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/styles.css?v=3" />
   <link rel="stylesheet" href="assets/lab.css" />
 
    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -70,7 +70,7 @@
             <a href="#research" class="btn secondary">View the Research</a>
           </div>
         </div>
-        <div class="scroll-cue" onclick="document.getElementById('what').scrollIntoView({ behavior: 'smooth' })">
+        <div class="scroll-cue"  data-scroll-target="what">
           <span>Scroll to learn more</span>
           <div class="scroll-arrow">↓</div>
         </div>
@@ -155,7 +155,7 @@
       <p>
         Our work is grounded in real-world adversary behaviour — not simulations or abstractions.
       </p>
-      <div class="flow-teaser" onclick="document.getElementById('adversarial-flow').scrollIntoView({ behavior: 'smooth' })">
+      <div class="flow-teaser" data-scroll-target="adversarial-flow">
         <div class="teaser-label">ARCHITECTURE</div>
         <h3 class="teaser-title">Segmentation by Design</h3>
         <p class="teaser-desc">
@@ -301,8 +301,6 @@
     </div>
   </footer>
 
-  <!-- Optional JS -->
-  <!-- <script src="script.js"></script> -->
+  <script src="assets/main.js"></script>
 </body>
-
 </html>
