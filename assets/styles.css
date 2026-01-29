@@ -116,6 +116,40 @@ main {
   padding: 2.5rem 7vw 3.5rem;
 }
 
+/* scroll */
+
+.scroll-cue {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  z-index: 10;
+  animation: fade-in 2s ease forwards;
+}
+
+.scroll-arrow {
+  font-size: 1.2rem;
+  margin-top: 4px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#what, #research, #ecosystem{
+  scroll-margin-top: 120px; /* match your header height */
+}
+
 /* Hero */
 
 .video-header {
