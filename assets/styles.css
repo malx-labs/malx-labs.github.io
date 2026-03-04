@@ -82,10 +82,6 @@ body {
   height: auto;
 }
 
-.logo-iocx {
-  width: clamp(230px, 28vw, 330px);
-}
-
 .nav {
   display: flex;
   gap: 1.1rem;
@@ -378,17 +374,6 @@ blockquote {
   font-size: 0.9rem;
 }
 
-.example-panel {
-  flex: 1;
-}
-
-.example-grid {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
 /* Lists */
 
 .bullets {
@@ -500,10 +485,6 @@ blockquote {
   .scroll-cue { display: none; }
 
   .logo img {
-    display: none;
-  }
-
-  .logo-iocx {
     width: clamp(340px, 42vw, 440px) !important;
     height: auto !important;
   }
@@ -561,15 +542,6 @@ blockquote {
 
   .video-header {
     padding-bottom: 2.5rem;
-  }
-
-  .example-panel img {
-    max-width:330px;
-  }
-
-  .example-grid {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 
