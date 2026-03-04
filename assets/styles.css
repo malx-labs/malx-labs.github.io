@@ -484,11 +484,6 @@ blockquote {
   .video-header { padding-bottom: 5rem; }
   .scroll-cue { display: none; }
 
-  .logo img {
-    width: clamp(340px, 42vw, 440px) !important;
-    height: auto !important;
-  }
-
   .site-header {
     padding: 0.9rem 4vw;
   }
